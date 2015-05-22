@@ -272,25 +272,29 @@ var VectorLayersExample = (function (_React$Component) {
           url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
           attribution: "© <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors"
         }),
-        _react2["default"].createElement(_reactLeaflet.Circle, { center: center, radius: 200, fillColor: "blue" }),
         _react2["default"].createElement(
-          _reactLeaflet.CircleMarker,
-          { center: [51.51, -0.12], radius: 20, color: "red" },
+          _reactLeaflet.FeatureGroup,
+          null,
+          _react2["default"].createElement(_reactLeaflet.Circle, { center: center, radius: 200, fillColor: "blue" }),
           _react2["default"].createElement(
-            _reactLeaflet.Popup,
-            null,
+            _reactLeaflet.CircleMarker,
+            { center: [51.51, -0.12], radius: 20, color: "red" },
             _react2["default"].createElement(
-              "span",
+              _reactLeaflet.Popup,
               null,
-              "Popup in CircleMarker"
+              _react2["default"].createElement(
+                "span",
+                null,
+                "Popup in CircleMarker"
+              )
             )
-          )
-        ),
-        _react2["default"].createElement(_reactLeaflet.Polyline, { positions: polyline, color: "lime" }),
-        _react2["default"].createElement(_reactLeaflet.MultiPolyline, { polylines: multiPolyline, color: "lime" }),
-        _react2["default"].createElement(_reactLeaflet.Polygon, { positions: polygon, color: "purple" }),
-        _react2["default"].createElement(_reactLeaflet.MultiPolygon, { polygons: multiPolygon, color: "purple" }),
-        _react2["default"].createElement(_reactLeaflet.Rectangle, { bounds: rectangle, color: "black" })
+          ),
+          _react2["default"].createElement(_reactLeaflet.Polyline, { positions: polyline, color: "lime" }),
+          _react2["default"].createElement(_reactLeaflet.MultiPolyline, { polylines: multiPolyline, color: "lime" }),
+          _react2["default"].createElement(_reactLeaflet.Polygon, { positions: polygon, color: "purple" }),
+          _react2["default"].createElement(_reactLeaflet.MultiPolygon, { polygons: multiPolygon, color: "purple" }),
+          _react2["default"].createElement(_reactLeaflet.Rectangle, { bounds: rectangle, color: "black" })
+        )
       );
     }
   }]);

@@ -1,6 +1,6 @@
 import React from "react";
 import {Circle, CircleMarker, Map, MultiPolygon, MultiPolyline,
-  Polygon, Polyline, Popup, Rectangle, TileLayer} from "react-leaflet";
+  Polygon, Polyline, Popup, Rectangle, TileLayer, FeatureGroup} from "react-leaflet";
 
 export default class VectorLayersExample extends React.Component {
   render() {
@@ -38,17 +38,19 @@ export default class VectorLayersExample extends React.Component {
         url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Circle center={center} radius={200} fillColor="blue" />
-      <CircleMarker center={[51.51, -0.12]} radius={20} color="red">
-        <Popup>
-          <span>Popup in CircleMarker</span>
-        </Popup>
-      </CircleMarker>
-      <Polyline positions={polyline} color="lime" />
-      <MultiPolyline polylines={multiPolyline} color="lime" />
-      <Polygon positions={polygon} color="purple" />
-      <MultiPolygon polygons={multiPolygon} color="purple" />
-      <Rectangle bounds={rectangle} color="black" />
+      <FeatureGroup>
+        <Circle center={center} radius={200} fillColor="blue" />
+        <CircleMarker center={[51.51, -0.12]} radius={20} color="red">
+          <Popup>
+            <span>Popup in CircleMarker</span>
+          </Popup>
+        </CircleMarker>
+        <Polyline positions={polyline} color="lime" />
+        <MultiPolyline polylines={multiPolyline} color="lime" />
+        <Polygon positions={polygon} color="purple" />
+        <MultiPolygon polygons={multiPolygon} color="purple" />
+        <Rectangle bounds={rectangle} color="black" />
+      </FeatureGroup>
     </Map>;
   }
 }

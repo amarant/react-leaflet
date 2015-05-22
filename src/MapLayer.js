@@ -5,12 +5,20 @@ import MapComponent from "./MapComponent"
 export default class MapLayer extends MapComponent {
   componentDidMount() {
     super.componentDidMount();
-    this.props.map.addLayer(this.leafletElement);
+    if (this.props.group) {
+      this.props.group.addLayer(this.leafletElement);
+    } else {
+      this.props.map.addLayer(this.leafletElement);
+    }
   }
 
   componentWillUnmount() {
     super.componentWillUnmount();
-    this.props.map.removeLayer(this.leafletElement);
+    if (this.props.group) {
+      this.props.group.removeLayer(this.leafletElement);
+    } else {
+      this.props.map.removeLayer(this.leafletElement);
+    }
   }
 
   getClonedChildrenWithMap(extra) {
