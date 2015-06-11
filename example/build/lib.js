@@ -1,23 +1,21 @@
 require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
-
-var _MapLayer2 = require("./MapLayer");
+var _MapLayer2 = require('./MapLayer');
 
 var _MapLayer3 = _interopRequireDefault(_MapLayer2);
 
@@ -33,7 +31,7 @@ var BaseTileLayer = (function (_MapLayer) {
   _inherits(BaseTileLayer, _MapLayer);
 
   _createClass(BaseTileLayer, [{
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       var _props = this.props;
       var opacity = _props.opacity;
@@ -47,46 +45,46 @@ var BaseTileLayer = (function (_MapLayer) {
       }
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       return null;
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      opacity: _react.PropTypes.number,
+      zIndex: _react.PropTypes.number
+    },
+    enumerable: true
   }]);
 
   return BaseTileLayer;
-})(_MapLayer3["default"]);
+})(_MapLayer3['default']);
 
-exports["default"] = BaseTileLayer;
-
-BaseTileLayer.propTypes = {
-  opacity: _react2["default"].PropTypes.number,
-  zIndex: _react2["default"].PropTypes.number
-};
-module.exports = exports["default"];
+exports['default'] = BaseTileLayer;
+module.exports = exports['default'];
 },{"./MapLayer":10,"react":"react"}],2:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _BaseTileLayer2 = require("./BaseTileLayer");
+var _BaseTileLayer2 = require('./BaseTileLayer');
 
 var _BaseTileLayer3 = _interopRequireDefault(_BaseTileLayer2);
 
@@ -102,55 +100,51 @@ var CanvasTileLayer = (function (_BaseTileLayer) {
   _inherits(CanvasTileLayer, _BaseTileLayer);
 
   _createClass(CanvasTileLayer, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(CanvasTileLayer.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(CanvasTileLayer.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var map = _props.map;
 
-      var props = _objectWithoutProperties(_props, ["map"]);
+      var props = _objectWithoutProperties(_props, ['map']);
 
-      this.leafletElement = _leaflet2["default"].tileLayer.canvas(props);
+      this.leafletElement = _leaflet.tileLayer.canvas(props);
     }
   }]);
 
   return CanvasTileLayer;
-})(_BaseTileLayer3["default"]);
+})(_BaseTileLayer3['default']);
 
-exports["default"] = CanvasTileLayer;
-module.exports = exports["default"];
+exports['default'] = CanvasTileLayer;
+module.exports = exports['default'];
 },{"./BaseTileLayer":1,"leaflet":"leaflet"}],3:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesLatlng = require("./types/latlng");
+var _typesLatlng = require('./types/latlng');
 
 var _typesLatlng2 = _interopRequireDefault(_typesLatlng);
 
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -166,20 +160,20 @@ var Circle = (function (_PopupContainer) {
   _inherits(Circle, _PopupContainer);
 
   _createClass(Circle, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(Circle.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(Circle.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var center = _props.center;
       var map = _props.map;
       var radius = _props.radius;
 
-      var props = _objectWithoutProperties(_props, ["center", "map", "radius"]);
+      var props = _objectWithoutProperties(_props, ['center', 'map', 'radius']);
 
-      this.leafletElement = _leaflet2["default"].circle(center, radius, props);
+      this.leafletElement = (0, _leaflet.circle)(center, radius, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.center !== prevProps.center) {
         this.leafletElement.setLatLng(this.props.center);
@@ -188,50 +182,48 @@ var Circle = (function (_PopupContainer) {
         this.leafletElement.setRadius(this.props.radius);
       }
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      center: _typesLatlng2['default'].isRequired,
+      radius: _react.PropTypes.number.isRequired
+    },
+    enumerable: true
   }]);
 
   return Circle;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = Circle;
-
-Circle.propTypes = {
-  center: _typesLatlng2["default"].isRequired,
-  radius: _react2["default"].PropTypes.number.isRequired
-};
-module.exports = exports["default"];
+exports['default'] = Circle;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"./types/latlng":23,"leaflet":"leaflet","react":"react"}],4:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesLatlng = require("./types/latlng");
+var _typesLatlng = require('./types/latlng');
 
 var _typesLatlng2 = _interopRequireDefault(_typesLatlng);
 
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -247,19 +239,19 @@ var CircleMarker = (function (_PopupContainer) {
   _inherits(CircleMarker, _PopupContainer);
 
   _createClass(CircleMarker, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(CircleMarker.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(CircleMarker.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var center = _props.center;
       var map = _props.map;
 
-      var props = _objectWithoutProperties(_props, ["center", "map"]);
+      var props = _objectWithoutProperties(_props, ['center', 'map']);
 
-      this.leafletElement = _leaflet2["default"].circleMarker(center, props);
+      this.leafletElement = (0, _leaflet.circleMarker)(center, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.center !== prevProps.center) {
         this.leafletElement.setLatLng(this.props.center);
@@ -268,44 +260,44 @@ var CircleMarker = (function (_PopupContainer) {
         this.leafletElement.setRadius(this.props.radius);
       }
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      center: _typesLatlng2['default'].isRequired,
+      radius: _react.PropTypes.number
+    },
+    enumerable: true
   }]);
 
   return CircleMarker;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = CircleMarker;
-
-CircleMarker.propTypes = {
-  center: _typesLatlng2["default"].isRequired,
-  radius: _react2["default"].PropTypes.number
-};
-module.exports = exports["default"];
+exports['default'] = CircleMarker;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"./types/latlng":23,"leaflet":"leaflet","react":"react"}],5:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -321,69 +313,60 @@ var FeatureGroup = (function (_PopupContainer) {
   _inherits(FeatureGroup, _PopupContainer);
 
   _createClass(FeatureGroup, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
       var _props = this.props;
-      var layers = _props.layers;
       var map = _props.map;
       var group = _props.group;
 
-      var props = _objectWithoutProperties(_props, ["layers", "map", "group"]);
+      var props = _objectWithoutProperties(_props, ['map', 'group']);
 
-      this.leafletElement = _leaflet2["default"].featureGroup();
+      this.leafletElement = (0, _leaflet.featureGroup)();
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       var children = this.getClonedChildrenWithMap({
         popupContainer: this.leafletElement,
         group: this.leafletElement
       });
-      return _react2["default"].createElement(
-        "div",
-        { style: { display: "none" } },
+      return _react2['default'].createElement(
+        'div',
+        { style: { display: 'none' } },
         children
       );
     }
   }]);
 
   return FeatureGroup;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = FeatureGroup;
-
-FeatureGroup.propTypes = {
-  layers: _react2["default"].PropTypes.array.isRequired
-};
-module.exports = exports["default"];
+exports['default'] = FeatureGroup;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"leaflet":"leaflet","react":"react"}],6:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -399,60 +382,58 @@ var GeoJson = (function (_PopupContainer) {
   _inherits(GeoJson, _PopupContainer);
 
   _createClass(GeoJson, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(GeoJson.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(GeoJson.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var data = _props.data;
       var map = _props.map;
 
-      var props = _objectWithoutProperties(_props, ["data", "map"]);
+      var props = _objectWithoutProperties(_props, ['data', 'map']);
 
-      this.leafletElement = _leaflet2["default"].geoJson(data, props);
+      this.leafletElement = (0, _leaflet.geoJson)(data, props);
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      data: _react.PropTypes.object.isRequired
+    },
+    enumerable: true
   }]);
 
   return GeoJson;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = GeoJson;
-
-GeoJson.propTypes = {
-  data: _react2["default"].PropTypes.object.isRequired
-};
-module.exports = exports["default"];
+exports['default'] = GeoJson;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"leaflet":"leaflet","react":"react"}],7:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesBounds = require("./types/bounds");
+var _typesBounds = require('./types/bounds');
 
 var _typesBounds2 = _interopRequireDefault(_typesBounds);
 
-var _MapLayer2 = require("./MapLayer");
+var _MapLayer2 = require('./MapLayer');
 
 var _MapLayer3 = _interopRequireDefault(_MapLayer2);
 
@@ -468,20 +449,20 @@ var ImageOverlay = (function (_MapLayer) {
   _inherits(ImageOverlay, _MapLayer);
 
   _createClass(ImageOverlay, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(ImageOverlay.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(ImageOverlay.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var bounds = _props.bounds;
       var map = _props.map;
       var url = _props.url;
 
-      var props = _objectWithoutProperties(_props, ["bounds", "map", "url"]);
+      var props = _objectWithoutProperties(_props, ['bounds', 'map', 'url']);
 
-      this.leafletElement = _leaflet2["default"].imageOverlay(url, bounds, props);
+      this.leafletElement = (0, _leaflet.imageOverlay)(url, bounds, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.url !== prevProps.url) {
         this.leafletElement.setUrl(this.props.url);
@@ -491,94 +472,96 @@ var ImageOverlay = (function (_MapLayer) {
       }
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       return null;
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      attribution: _react.PropTypes.string,
+      bounds: _typesBounds2['default'].isRequired,
+      opacity: _react.PropTypes.number,
+      url: _react.PropTypes.string.isRequired
+    },
+    enumerable: true
   }]);
 
   return ImageOverlay;
-})(_MapLayer3["default"]);
+})(_MapLayer3['default']);
 
-exports["default"] = ImageOverlay;
-
-ImageOverlay.propTypes = {
-  attribution: _react2["default"].PropTypes.string,
-  bounds: _typesBounds2["default"].isRequired,
-  opacity: _react2["default"].PropTypes.number,
-  url: _react2["default"].PropTypes.string.isRequired
-};
-module.exports = exports["default"];
+exports['default'] = ImageOverlay;
+module.exports = exports['default'];
 },{"./MapLayer":10,"./types/bounds":21,"leaflet":"leaflet","react":"react"}],8:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _lodashLangIsArray = require("lodash/lang/isArray");
+var _lodashLangIsArray = require('lodash/lang/isArray');
 
 var _lodashLangIsArray2 = _interopRequireDefault(_lodashLangIsArray);
 
-var _lodashUtilityUniqueId = require("lodash/utility/uniqueId");
+var _lodashUtilityUniqueId = require('lodash/utility/uniqueId');
 
 var _lodashUtilityUniqueId2 = _interopRequireDefault(_lodashUtilityUniqueId);
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
 var _leaflet2 = _interopRequireDefault(_leaflet);
 
-var _typesBounds = require("./types/bounds");
+var _typesBounds = require('./types/bounds');
 
 var _typesBounds2 = _interopRequireDefault(_typesBounds);
 
-var _typesLatlng = require("./types/latlng");
+var _typesLatlng = require('./types/latlng');
 
 var _typesLatlng2 = _interopRequireDefault(_typesLatlng);
 
-var _MapComponent2 = require("./MapComponent");
+var _MapComponent2 = require('./MapComponent');
 
 var _MapComponent3 = _interopRequireDefault(_MapComponent2);
 
 var normalizeCenter = function normalizeCenter(pos) {
-  return (0, _lodashLangIsArray2["default"])(pos) ? pos : [pos.lat, pos.lng || pos.lon];
+  return (0, _lodashLangIsArray2['default'])(pos) ? pos : [pos.lat, pos.lng || pos.lon];
 };
 
 var Map = (function (_MapComponent) {
   function Map(props) {
     _classCallCheck(this, Map);
 
-    _get(Object.getPrototypeOf(Map.prototype), "constructor", this).call(this, props);
+    _get(Object.getPrototypeOf(Map.prototype), 'constructor', this).call(this, props);
     this.state = {
-      id: props.id || (0, _lodashUtilityUniqueId2["default"])("map")
+      id: props.id || (0, _lodashUtilityUniqueId2['default'])('map')
     };
   }
 
   _inherits(Map, _MapComponent);
 
   _createClass(Map, [{
-    key: "componentDidMount",
+    key: 'componentDidMount',
     value: function componentDidMount() {
-      this.leafletElement = _leaflet2["default"].map(this.state.id, this.props);
-      _get(Object.getPrototypeOf(Map.prototype), "componentDidMount", this).call(this);
+      this.leafletElement = _leaflet2['default'].map(this.state.id, this.props);
+      _get(Object.getPrototypeOf(Map.prototype), 'componentDidMount', this).call(this);
       this.setState({ map: this.leafletElement });
     }
   }, {
-    key: "shouldUpdateCenter",
+    key: 'shouldUpdateCenter',
     value: function shouldUpdateCenter(next, prev) {
       if (!prev) return true;
       next = normalizeCenter(next);
@@ -586,7 +569,7 @@ var Map = (function (_MapComponent) {
       return next[0] !== prev[0] || next[1] !== prev[1];
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       var _props = this.props;
       var center = _props.center;
@@ -599,71 +582,77 @@ var Map = (function (_MapComponent) {
       }
     }
   }, {
-    key: "componentWillUnmount",
+    key: 'componentWillUnmount',
     value: function componentWillUnmount() {
-      _get(Object.getPrototypeOf(Map.prototype), "componentWillUnmount", this).call(this);
+      _get(Object.getPrototypeOf(Map.prototype), 'componentWillUnmount', this).call(this);
       this.leafletElement.remove();
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       var map = this.leafletElement;
-      var children = map ? _react2["default"].Children.map(this.props.children, function (child) {
-        return child ? _react2["default"].cloneElement(child, { map: map }) : null;
+      var children = map ? _react2['default'].Children.map(this.props.children, function (child) {
+        return child ? _react2['default'].cloneElement(child, { map: map }) : null;
       }) : null;
 
-      return _react2["default"].createElement(
-        "div",
+      return _react2['default'].createElement(
+        'div',
         { className: this.props.className, id: this.state.id, style: this.props.style },
         children
       );
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      center: _typesLatlng2['default'],
+      className: _react.PropTypes.string,
+      id: _react.PropTypes.string,
+      maxBounds: _typesBounds2['default'],
+      maxZoom: _react.PropTypes.number,
+      minZoom: _react.PropTypes.number,
+      style: _react.PropTypes.object,
+      zoom: _react.PropTypes.number
+    },
+    enumerable: true
   }]);
 
   return Map;
-})(_MapComponent3["default"]);
+})(_MapComponent3['default']);
 
-exports["default"] = Map;
-
-Map.propTypes = {
-  center: _typesLatlng2["default"],
-  className: _react2["default"].PropTypes.string,
-  id: _react2["default"].PropTypes.string,
-  maxBounds: _typesBounds2["default"],
-  maxZoom: _react2["default"].PropTypes.number,
-  minZoom: _react2["default"].PropTypes.number,
-  style: _react2["default"].PropTypes.object,
-  zoom: _react2["default"].PropTypes.number
-};
-module.exports = exports["default"];
+exports['default'] = Map;
+module.exports = exports['default'];
 },{"./MapComponent":9,"./types/bounds":21,"./types/latlng":23,"leaflet":"leaflet","lodash/lang/isArray":80,"lodash/utility/uniqueId":92,"react":"react"}],9:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _lodashLangClone = require("lodash/lang/clone");
+var _lodashLangClone = require('lodash/lang/clone');
 
 var _lodashLangClone2 = _interopRequireDefault(_lodashLangClone);
 
-var _lodashCollectionForEach = require("lodash/collection/forEach");
+var _lodashCollectionForEach = require('lodash/collection/forEach');
 
 var _lodashCollectionForEach2 = _interopRequireDefault(_lodashCollectionForEach);
 
-var _lodashCollectionReduce = require("lodash/collection/reduce");
+var _lodashCollectionReduce = require('lodash/collection/reduce');
 
 var _lodashCollectionReduce2 = _interopRequireDefault(_lodashCollectionReduce);
 
-var _react = require("react");
+var _lodashObjectKeys = require('lodash/object/keys');
+
+var _lodashObjectKeys2 = _interopRequireDefault(_lodashObjectKeys);
+
+var _react = require('react');
 
 var EVENTS_RE = /on(?:Leaflet)?(.+)/i;
 
@@ -679,25 +668,25 @@ var MapComponent = (function (_Component) {
   _inherits(MapComponent, _Component);
 
   _createClass(MapComponent, [{
-    key: "getLeafletElement",
+    key: 'getLeafletElement',
     value: function getLeafletElement() {
       return this.leafletElement;
     }
   }, {
-    key: "extractLeafletEvents",
+    key: 'extractLeafletEvents',
     value: function extractLeafletEvents(props) {
-      return (0, _lodashCollectionReduce2["default"])(props, function (res, cb, ev) {
+      return (0, _lodashCollectionReduce2['default'])((0, _lodashObjectKeys2['default'])(props), function (res, ev) {
         if (EVENTS_RE.test(ev)) {
           var key = ev.replace(EVENTS_RE, function (match, p) {
             return p.toLowerCase();
           });
-          res[key] = cb;
+          res[key] = props[ev];
         }
         return res;
       }, {});
     }
   }, {
-    key: "bindLeafletEvents",
+    key: 'bindLeafletEvents',
     value: function bindLeafletEvents() {
       var next = arguments[0] === undefined ? {} : arguments[0];
       var prev = arguments[1] === undefined ? {} : arguments[1];
@@ -705,15 +694,15 @@ var MapComponent = (function (_Component) {
       var el = this.leafletElement;
       if (!el) return;
 
-      var diff = (0, _lodashLangClone2["default"])(prev);
-      (0, _lodashCollectionForEach2["default"])(prev, function (cb, ev) {
+      var diff = (0, _lodashLangClone2['default'])(prev);
+      (0, _lodashCollectionForEach2['default'])(prev, function (cb, ev) {
         if (!next[ev] || cb !== next[ev]) {
           delete diff[ev];
           el.off(ev, cb);
         }
       });
 
-      (0, _lodashCollectionForEach2["default"])(next, function (cb, ev) {
+      (0, _lodashCollectionForEach2['default'])(next, function (cb, ev) {
         if (!prev[ev] || cb !== prev[ev]) {
           diff[ev] = cb;
           el.on(ev, cb);
@@ -723,34 +712,34 @@ var MapComponent = (function (_Component) {
       return diff;
     }
   }, {
-    key: "fireLeafletEvent",
+    key: 'fireLeafletEvent',
     value: function fireLeafletEvent(type, data) {
       var el = this.leafletElement;
       if (el) el.fire(type, data);
     }
   }, {
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
       this._leafletEvents = this.extractLeafletEvents(this.props);
     }
   }, {
-    key: "componentDidMount",
+    key: 'componentDidMount',
     value: function componentDidMount() {
       this.bindLeafletEvents(this._leafletEvents);
     }
   }, {
-    key: "componentWillReceiveProps",
+    key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
       var next = this.extractLeafletEvents(nextProps);
       this._leafletEvents = this.bindLeafletEvents(next, this._leafletEvents);
     }
   }, {
-    key: "componentWillUnmount",
+    key: 'componentWillUnmount',
     value: function componentWillUnmount() {
       var el = this.leafletElement;
       if (!el) return;
 
-      (0, _lodashCollectionForEach2["default"])(this._leafletEvents, function (cb, ev) {
+      (0, _lodashCollectionForEach2['default'])(this._leafletEvents, function (cb, ev) {
         el.off(ev, cb);
       });
     }
@@ -759,34 +748,34 @@ var MapComponent = (function (_Component) {
   return MapComponent;
 })(_react.Component);
 
-exports["default"] = MapComponent;
-module.exports = exports["default"];
-},{"lodash/collection/forEach":26,"lodash/collection/reduce":27,"lodash/lang/clone":78,"react":"react"}],10:[function(require,module,exports){
-"use strict";
+exports['default'] = MapComponent;
+module.exports = exports['default'];
+},{"lodash/collection/forEach":26,"lodash/collection/reduce":27,"lodash/lang/clone":78,"lodash/object/keys":85,"react":"react"}],10:[function(require,module,exports){
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _lodashObjectAssign = require("lodash/object/assign");
+var _lodashObjectAssign = require('lodash/object/assign');
 
 var _lodashObjectAssign2 = _interopRequireDefault(_lodashObjectAssign);
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _MapComponent2 = require("./MapComponent");
+var _MapComponent2 = require('./MapComponent');
 
 var _MapComponent3 = _interopRequireDefault(_MapComponent2);
 
@@ -802,9 +791,9 @@ var MapLayer = (function (_MapComponent) {
   _inherits(MapLayer, _MapComponent);
 
   _createClass(MapLayer, [{
-    key: "componentDidMount",
+    key: 'componentDidMount',
     value: function componentDidMount() {
-      _get(Object.getPrototypeOf(MapLayer.prototype), "componentDidMount", this).call(this);
+      _get(Object.getPrototypeOf(MapLayer.prototype), 'componentDidMount', this).call(this);
       if (this.props.group) {
         this.props.group.addLayer(this.leafletElement);
       } else {
@@ -812,9 +801,9 @@ var MapLayer = (function (_MapComponent) {
       }
     }
   }, {
-    key: "componentWillUnmount",
+    key: 'componentWillUnmount',
     value: function componentWillUnmount() {
-      _get(Object.getPrototypeOf(MapLayer.prototype), "componentWillUnmount", this).call(this);
+      _get(Object.getPrototypeOf(MapLayer.prototype), 'componentWillUnmount', this).call(this);
       if (this.props.group) {
         this.props.group.removeLayer(this.leafletElement);
       } else {
@@ -822,57 +811,53 @@ var MapLayer = (function (_MapComponent) {
       }
     }
   }, {
-    key: "getClonedChildrenWithMap",
+    key: 'getClonedChildrenWithMap',
     value: function getClonedChildrenWithMap(extra) {
       var _props = this.props;
       var children = _props.children;
       var map = _props.map;
 
-      var props = (0, _lodashObjectAssign2["default"])({ map: map }, extra);
+      var props = (0, _lodashObjectAssign2['default'])({ map: map }, extra);
 
-      return _react2["default"].Children.map(children, function (child) {
-        return child ? _react2["default"].cloneElement(child, props) : null;
+      return _react2['default'].Children.map(children, function (child) {
+        return child ? _react2['default'].cloneElement(child, props) : null;
       });
     }
   }]);
 
   return MapLayer;
-})(_MapComponent3["default"]);
+})(_MapComponent3['default']);
 
-exports["default"] = MapLayer;
-module.exports = exports["default"];
+exports['default'] = MapLayer;
+module.exports = exports['default'];
 },{"./MapComponent":9,"lodash/object/assign":84,"react":"react"}],11:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesLatlng = require("./types/latlng");
+var _typesLatlng = require('./types/latlng');
 
 var _typesLatlng2 = _interopRequireDefault(_typesLatlng);
 
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -888,19 +873,19 @@ var Marker = (function (_PopupContainer) {
   _inherits(Marker, _PopupContainer);
 
   _createClass(Marker, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(Marker.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(Marker.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var map = _props.map;
       var position = _props.position;
 
-      var props = _objectWithoutProperties(_props, ["map", "position"]);
+      var props = _objectWithoutProperties(_props, ['map', 'position']);
 
-      this.leafletElement = _leaflet2["default"].marker(position, props);
+      this.leafletElement = (0, _leaflet.marker)(position, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.position !== prevProps.position) {
         this.leafletElement.setLatLng(this.props.position);
@@ -915,52 +900,50 @@ var Marker = (function (_PopupContainer) {
         this.leafletElement.setOpacity(this.props.opacity);
       }
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      position: _typesLatlng2['default'].isRequired,
+      icon: _react.PropTypes.instanceOf(_leaflet.Icon),
+      zIndexOffset: _react.PropTypes.number,
+      opacity: _react.PropTypes.number
+    },
+    enumerable: true
   }]);
 
   return Marker;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = Marker;
-
-Marker.propTypes = {
-  position: _typesLatlng2["default"].isRequired,
-  icon: _react2["default"].PropTypes.instanceOf(_leaflet2["default"].Icon),
-  zIndexOffset: _react2["default"].PropTypes.number,
-  opacity: _react2["default"].PropTypes.number
-};
-module.exports = exports["default"];
+exports['default'] = Marker;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"./types/latlng":23,"leaflet":"leaflet","react":"react"}],12:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesLatlngList = require("./types/latlngList");
+var _typesLatlngList = require('./types/latlngList');
 
 var _typesLatlngList2 = _interopRequireDefault(_typesLatlngList);
 
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -976,67 +959,65 @@ var MultiPolygon = (function (_PopupContainer) {
   _inherits(MultiPolygon, _PopupContainer);
 
   _createClass(MultiPolygon, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(MultiPolygon.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(MultiPolygon.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var map = _props.map;
       var polygons = _props.polygons;
 
-      var props = _objectWithoutProperties(_props, ["map", "polygons"]);
+      var props = _objectWithoutProperties(_props, ['map', 'polygons']);
 
-      this.leafletElement = _leaflet2["default"].multiPolygon(polygons, props);
+      this.leafletElement = (0, _leaflet.multiPolygon)(polygons, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.polygons !== prevProps.polygons) {
         this.leafletElement.setLatLngs(this.props.polygons);
       }
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      polygons: _react.PropTypes.arrayOf(_typesLatlngList2['default']).isRequired
+    },
+    enumerable: true
   }]);
 
   return MultiPolygon;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = MultiPolygon;
-
-MultiPolygon.propTypes = {
-  polygons: _react2["default"].PropTypes.arrayOf(_typesLatlngList2["default"]).isRequired
-};
-module.exports = exports["default"];
+exports['default'] = MultiPolygon;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"./types/latlngList":24,"leaflet":"leaflet","react":"react"}],13:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesLatlngList = require("./types/latlngList");
+var _typesLatlngList = require('./types/latlngList');
 
 var _typesLatlngList2 = _interopRequireDefault(_typesLatlngList);
 
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -1052,63 +1033,65 @@ var MultiPolyline = (function (_PopupContainer) {
   _inherits(MultiPolyline, _PopupContainer);
 
   _createClass(MultiPolyline, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(MultiPolyline.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(MultiPolyline.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var map = _props.map;
       var polylines = _props.polylines;
 
-      var props = _objectWithoutProperties(_props, ["map", "polylines"]);
+      var props = _objectWithoutProperties(_props, ['map', 'polylines']);
 
-      this.leafletElement = _leaflet2["default"].multiPolyline(polylines, props);
+      this.leafletElement = (0, _leaflet.multiPolyline)(polylines, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.polylines !== prevProps.polylines) {
         this.leafletElement.setLatLngs(this.props.polylines);
       }
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      polylines: _react.PropTypes.arrayOf(_typesLatlngList2['default']).isRequired
+    },
+    enumerable: true
   }]);
 
   return MultiPolyline;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = MultiPolyline;
-
-MultiPolyline.propTypes = {
-  polylines: _react2["default"].PropTypes.arrayOf(_typesLatlngList2["default"]).isRequired
-};
-module.exports = exports["default"];
+exports['default'] = MultiPolyline;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"./types/latlngList":24,"leaflet":"leaflet","react":"react"}],14:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
 var _leaflet2 = _interopRequireDefault(_leaflet);
 
-var _typesLatlngList = require("./types/latlngList");
+var _typesLatlngList = require('./types/latlngList');
 
 var _typesLatlngList2 = _interopRequireDefault(_typesLatlngList);
 
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -1124,19 +1107,19 @@ var Polygon = (function (_PopupContainer) {
   _inherits(Polygon, _PopupContainer);
 
   _createClass(Polygon, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(Polygon.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(Polygon.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var map = _props.map;
       var positions = _props.positions;
 
-      var props = _objectWithoutProperties(_props, ["map", "positions"]);
+      var props = _objectWithoutProperties(_props, ['map', 'positions']);
 
-      this.leafletElement = _leaflet2["default"].polygon(positions, props);
+      this.leafletElement = _leaflet2['default'].polygon(positions, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.positions !== prevProps.positions) {
         this.leafletElement.setLatLngs(this.props.positions);
@@ -1145,42 +1128,40 @@ var Polygon = (function (_PopupContainer) {
   }]);
 
   return Polygon;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = Polygon;
+exports['default'] = Polygon;
 
 Polygon.propTypes = {
-  positions: _typesLatlngList2["default"].isRequired
+  positions: _typesLatlngList2['default'].isRequired
 };
-module.exports = exports["default"];
+module.exports = exports['default'];
 },{"./PopupContainer":17,"./types/latlngList":24,"leaflet":"leaflet"}],15:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesLatlngList = require("./types/latlngList");
+var _typesLatlngList = require('./types/latlngList');
 
 var _typesLatlngList2 = _interopRequireDefault(_typesLatlngList);
 
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -1196,67 +1177,67 @@ var Polyline = (function (_PopupContainer) {
   _inherits(Polyline, _PopupContainer);
 
   _createClass(Polyline, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(Polyline.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(Polyline.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var map = _props.map;
       var positions = _props.positions;
 
-      var props = _objectWithoutProperties(_props, ["map", "positions"]);
+      var props = _objectWithoutProperties(_props, ['map', 'positions']);
 
-      this.leafletElement = _leaflet2["default"].polyline(positions, props);
+      this.leafletElement = (0, _leaflet.polyline)(positions, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.positions !== prevProps.positions) {
         this.leafletElement.setLatLngs(this.props.positions);
       }
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      positions: _typesLatlngList2['default'].isRequired
+    },
+    enumerable: true
   }]);
 
   return Polyline;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = Polyline;
-
-Polyline.propTypes = {
-  positions: _typesLatlngList2["default"].isRequired
-};
-module.exports = exports["default"];
+exports['default'] = Polyline;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"./types/latlngList":24,"leaflet":"leaflet"}],16:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesLatlng = require("./types/latlng");
+var _typesLatlng = require('./types/latlng');
 
 var _typesLatlng2 = _interopRequireDefault(_typesLatlng);
 
-var _MapComponent2 = require("./MapComponent");
+var _MapComponent2 = require('./MapComponent');
 
 var _MapComponent3 = _interopRequireDefault(_MapComponent2);
 
@@ -1272,19 +1253,19 @@ var Popup = (function (_MapComponent) {
   _inherits(Popup, _MapComponent);
 
   _createClass(Popup, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(Popup.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(Popup.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var children = _props.children;
       var map = _props.map;
 
-      var props = _objectWithoutProperties(_props, ["children", "map"]);
+      var props = _objectWithoutProperties(_props, ['children', 'map']);
 
-      this.leafletElement = _leaflet2["default"].popup(props);
+      this.leafletElement = (0, _leaflet.popup)(props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       var _props2 = this.props;
       var children = _props2.children;
@@ -1292,10 +1273,10 @@ var Popup = (function (_MapComponent) {
       var popupContainer = _props2.popupContainer;
       var position = _props2.position;
 
-      var props = _objectWithoutProperties(_props2, ["children", "map", "popupContainer", "position"]);
+      var props = _objectWithoutProperties(_props2, ['children', 'map', 'popupContainer', 'position']);
 
       if (children !== prevProps.children) {
-        var content = _react2["default"].renderToStaticMarkup(children);
+        var content = _react2['default'].renderToStaticMarkup(children);
         if (popupContainer) {
           popupContainer.bindPopup(content, props);
         } else {
@@ -1306,13 +1287,13 @@ var Popup = (function (_MapComponent) {
       }
     }
   }, {
-    key: "componentWillUnmount",
+    key: 'componentWillUnmount',
     value: function componentWillUnmount() {
-      _get(Object.getPrototypeOf(Popup.prototype), "componentWillUnmount", this).call(this);
+      _get(Object.getPrototypeOf(Popup.prototype), 'componentWillUnmount', this).call(this);
       this.props.map.removeLayer(this.leafletElement);
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       var _props3 = this.props;
       var children = _props3.children;
@@ -1320,10 +1301,10 @@ var Popup = (function (_MapComponent) {
       var popupContainer = _props3.popupContainer;
       var position = _props3.position;
 
-      var props = _objectWithoutProperties(_props3, ["children", "map", "popupContainer", "position"]);
+      var props = _objectWithoutProperties(_props3, ['children', 'map', 'popupContainer', 'position']);
 
       if (children) {
-        var content = _react2["default"].renderToStaticMarkup(children);
+        var content = _react2['default'].renderToStaticMarkup(children);
         // Attach to container component
         if (popupContainer) {
           popupContainer.bindPopup(content, props);
@@ -1337,37 +1318,39 @@ var Popup = (function (_MapComponent) {
       }
       return null;
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      position: _typesLatlng2['default']
+    },
+    enumerable: true
   }]);
 
   return Popup;
-})(_MapComponent3["default"]);
+})(_MapComponent3['default']);
 
-exports["default"] = Popup;
-
-Popup.propTypes = {
-  position: _typesLatlng2["default"]
-};
-module.exports = exports["default"];
+exports['default'] = Popup;
+module.exports = exports['default'];
 },{"./MapComponent":9,"./types/latlng":23,"leaflet":"leaflet","react":"react"}],17:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _MapLayer2 = require("./MapLayer");
+var _MapLayer2 = require('./MapLayer');
 
 var _MapLayer3 = _interopRequireDefault(_MapLayer2);
 
@@ -1383,52 +1366,50 @@ var PopupContainer = (function (_MapLayer) {
   _inherits(PopupContainer, _MapLayer);
 
   _createClass(PopupContainer, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       var children = this.getClonedChildrenWithMap({
         popupContainer: this.leafletElement
       });
-      return _react2["default"].createElement(
-        "div",
-        { style: { display: "none" } },
+      return _react2['default'].createElement(
+        'div',
+        { style: { display: 'none' } },
         children
       );
     }
   }]);
 
   return PopupContainer;
-})(_MapLayer3["default"]);
+})(_MapLayer3['default']);
 
-exports["default"] = PopupContainer;
-module.exports = exports["default"];
+exports['default'] = PopupContainer;
+module.exports = exports['default'];
 },{"./MapLayer":10,"react":"react"}],18:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _typesBounds = require("./types/bounds");
+var _typesBounds = require('./types/bounds');
 
 var _typesBounds2 = _interopRequireDefault(_typesBounds);
 
-var _PopupContainer2 = require("./PopupContainer");
+var _PopupContainer2 = require('./PopupContainer');
 
 var _PopupContainer3 = _interopRequireDefault(_PopupContainer2);
 
@@ -1444,63 +1425,61 @@ var Rectangle = (function (_PopupContainer) {
   _inherits(Rectangle, _PopupContainer);
 
   _createClass(Rectangle, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(Rectangle.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(Rectangle.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var bounds = _props.bounds;
       var map = _props.map;
 
-      var props = _objectWithoutProperties(_props, ["bounds", "map"]);
+      var props = _objectWithoutProperties(_props, ['bounds', 'map']);
 
-      this.leafletElement = _leaflet2["default"].rectangle(bounds, props);
+      this.leafletElement = (0, _leaflet.rectangle)(bounds, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       if (this.props.bounds !== prevProps.bounds) {
         this.leafletElement.setBounds(this.props.bounds);
       }
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      bounds: _typesBounds2['default'].isRequired
+    },
+    enumerable: true
   }]);
 
   return Rectangle;
-})(_PopupContainer3["default"]);
+})(_PopupContainer3['default']);
 
-exports["default"] = Rectangle;
-
-Rectangle.propTypes = {
-  bounds: _typesBounds2["default"].isRequired
-};
-module.exports = exports["default"];
+exports['default'] = Rectangle;
+module.exports = exports['default'];
 },{"./PopupContainer":17,"./types/bounds":21,"leaflet":"leaflet"}],19:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _BaseTileLayer2 = require("./BaseTileLayer");
+var _BaseTileLayer2 = require('./BaseTileLayer');
 
 var _BaseTileLayer3 = _interopRequireDefault(_BaseTileLayer2);
 
@@ -1516,19 +1495,19 @@ var TileLayer = (function (_BaseTileLayer) {
   _inherits(TileLayer, _BaseTileLayer);
 
   _createClass(TileLayer, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(TileLayer.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(TileLayer.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var map = _props.map;
       var url = _props.url;
 
-      var props = _objectWithoutProperties(_props, ["map", "url"]);
+      var props = _objectWithoutProperties(_props, ['map', 'url']);
 
-      this.leafletElement = _leaflet2["default"].tileLayer(url, props);
+      this.leafletElement = (0, _leaflet.tileLayer)(url, props);
     }
   }, {
-    key: "componentDidUpdate",
+    key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps) {
       var url = this.props.url;
 
@@ -1536,45 +1515,43 @@ var TileLayer = (function (_BaseTileLayer) {
         this.leafletElement.setUrl(url);
       }
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      url: _react.PropTypes.string.isRequired
+    },
+    enumerable: true
   }]);
 
   return TileLayer;
-})(_BaseTileLayer3["default"]);
+})(_BaseTileLayer3['default']);
 
-exports["default"] = TileLayer;
-
-TileLayer.propTypes = {
-  url: _react2["default"].PropTypes.string.isRequired
-};
-module.exports = exports["default"];
+exports['default'] = TileLayer;
+module.exports = exports['default'];
 },{"./BaseTileLayer":1,"leaflet":"leaflet","react":"react"}],20:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
+var _leaflet = require('leaflet');
 
-var _leaflet = require("leaflet");
-
-var _leaflet2 = _interopRequireDefault(_leaflet);
-
-var _BaseTileLayer2 = require("./BaseTileLayer");
+var _BaseTileLayer2 = require('./BaseTileLayer');
 
 var _BaseTileLayer3 = _interopRequireDefault(_BaseTileLayer2);
 
@@ -1590,122 +1567,116 @@ var WMSTileLayer = (function (_BaseTileLayer) {
   _inherits(WMSTileLayer, _BaseTileLayer);
 
   _createClass(WMSTileLayer, [{
-    key: "componentWillMount",
+    key: 'componentWillMount',
     value: function componentWillMount() {
-      _get(Object.getPrototypeOf(WMSTileLayer.prototype), "componentWillMount", this).call(this);
+      _get(Object.getPrototypeOf(WMSTileLayer.prototype), 'componentWillMount', this).call(this);
       var _props = this.props;
       var map = _props.map;
       var url = _props.url;
 
-      var props = _objectWithoutProperties(_props, ["map", "url"]);
+      var props = _objectWithoutProperties(_props, ['map', 'url']);
 
-      this.leafletElement = _leaflet2["default"].tileLayer.wms(url, props);
+      this.leafletElement = _leaflet.tileLayer.wms(url, props);
     }
+  }], [{
+    key: 'propTypes',
+    value: {
+      url: _react.PropTypes.string.isRequired
+    },
+    enumerable: true
   }]);
 
   return WMSTileLayer;
-})(_BaseTileLayer3["default"]);
+})(_BaseTileLayer3['default']);
 
-exports["default"] = WMSTileLayer;
-
-WMSTileLayer.propTypes = {
-  url: _react2["default"].PropTypes.string.isRequired
-};
-module.exports = exports["default"];
+exports['default'] = WMSTileLayer;
+module.exports = exports['default'];
 },{"./BaseTileLayer":1,"leaflet":"leaflet","react":"react"}],21:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
 var _leaflet2 = _interopRequireDefault(_leaflet);
 
-var _latlngList = require("./latlngList");
+var _latlngList = require('./latlngList');
 
 var _latlngList2 = _interopRequireDefault(_latlngList);
 
-exports["default"] = _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.instanceOf(_leaflet2["default"].LatLngBounds), _latlngList2["default"]]);
-module.exports = exports["default"];
+exports['default'] = _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.instanceOf(_leaflet2['default'].LatLngBounds), _latlngList2['default']]);
+module.exports = exports['default'];
 },{"./latlngList":24,"leaflet":"leaflet","react":"react"}],22:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _bounds = require("./bounds");
+var _bounds = require('./bounds');
 
 var _bounds2 = _interopRequireDefault(_bounds);
 
-var _latlng = require("./latlng");
+var _latlng = require('./latlng');
 
 var _latlng2 = _interopRequireDefault(_latlng);
 
-var _latlngList = require("./latlngList");
+var _latlngList = require('./latlngList');
 
 var _latlngList2 = _interopRequireDefault(_latlngList);
 
-exports["default"] = { bounds: _bounds2["default"], latlng: _latlng2["default"], latlngList: _latlngList2["default"] };
-module.exports = exports["default"];
+exports['default'] = { bounds: _bounds2['default'], latlng: _latlng2['default'], latlngList: _latlngList2['default'] };
+module.exports = exports['default'];
 },{"./bounds":21,"./latlng":23,"./latlngList":24}],23:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _react = require('react');
 
-var _react = require("react");
-
-var _react2 = _interopRequireDefault(_react);
-
-var Type = _react2["default"].PropTypes;
-
-exports["default"] = Type.oneOfType([
+exports['default'] = _react.PropTypes.oneOfType([
 // [Number, Number]
-Type.arrayOf(Type.number),
+_react.PropTypes.arrayOf(_react.PropTypes.number),
 // {lat: Number, lng: Number}
-Type.shape({
-  lat: Type.number,
-  lng: Type.number
+_react.PropTypes.shape({
+  lat: _react.PropTypes.number,
+  lng: _react.PropTypes.number
 }),
 // {lat: Number, lon: Number}
-Type.shape({
-  lat: Type.number,
-  lon: Type.number
+_react.PropTypes.shape({
+  lat: _react.PropTypes.number,
+  lon: _react.PropTypes.number
 })]);
-module.exports = exports["default"];
+module.exports = exports['default'];
 },{"react":"react"}],24:[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _react = require("react");
+var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
-
-var _latlng = require("./latlng");
+var _latlng = require('./latlng');
 
 var _latlng2 = _interopRequireDefault(_latlng);
 
-exports["default"] = _react2["default"].PropTypes.arrayOf(_latlng2["default"]);
-module.exports = exports["default"];
+exports['default'] = _react.PropTypes.arrayOf(_latlng2['default']);
+module.exports = exports['default'];
 },{"./latlng":23,"react":"react"}],25:[function(require,module,exports){
 /**
  * Gets the last element of `array`.
@@ -2305,7 +2276,8 @@ module.exports = baseGet;
 
 },{"./toObject":76}],42:[function(require,module,exports){
 var baseIsEqualDeep = require('./baseIsEqualDeep'),
-    isObject = require('../lang/isObject');
+    isObject = require('../lang/isObject'),
+    isObjectLike = require('./isObjectLike');
 
 /**
  * The base implementation of `_.isEqual` without support for `this` binding
@@ -2324,7 +2296,7 @@ function baseIsEqual(value, other, customizer, isLoose, stackA, stackB) {
   if (value === other) {
     return true;
   }
-  if (value == null || other == null || (!isObject(value) && !isObject(other))) {
+  if (value == null || other == null || (!isObject(value) && !isObjectLike(other))) {
     return value !== value && other !== other;
   }
   return baseIsEqualDeep(value, other, baseIsEqual, customizer, isLoose, stackA, stackB);
@@ -2332,7 +2304,7 @@ function baseIsEqual(value, other, customizer, isLoose, stackA, stackB) {
 
 module.exports = baseIsEqual;
 
-},{"../lang/isObject":82,"./baseIsEqualDeep":43}],43:[function(require,module,exports){
+},{"../lang/isObject":82,"./baseIsEqualDeep":43,"./isObjectLike":73}],43:[function(require,module,exports){
 var equalArrays = require('./equalArrays'),
     equalByTag = require('./equalByTag'),
     equalObjects = require('./equalObjects'),
@@ -2534,8 +2506,7 @@ var baseGet = require('./baseGet'),
     toPath = require('./toPath');
 
 /**
- * The base implementation of `_.matchesProperty` which does not which does
- * not clone `value`.
+ * The base implementation of `_.matchesProperty` which does not clone `srcValue`.
  *
  * @private
  * @param {string} path The path of the property to get.
@@ -3298,6 +3269,9 @@ function isArrayLike(value) {
 module.exports = isArrayLike;
 
 },{"./getLength":62,"./isLength":72}],69:[function(require,module,exports){
+/** Used to detect unsigned integer values. */
+var reIsUint = /^\d+$/;
+
 /**
  * Used as the [maximum length](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-number.max_safe_integer)
  * of an array-like value.
@@ -3313,7 +3287,7 @@ var MAX_SAFE_INTEGER = 9007199254740991;
  * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
  */
 function isIndex(value, length) {
-  value = typeof value == 'number' ? value : parseFloat(value);
+  value = (typeof value == 'number' || reIsUint.test(value)) ? +value : -1;
   length = length == null ? MAX_SAFE_INTEGER : length;
   return value > -1 && value % 1 == 0 && value < length;
 }
@@ -4119,7 +4093,7 @@ var baseProperty = require('../internal/baseProperty'),
     isKey = require('../internal/isKey');
 
 /**
- * Creates a function which returns the property value at `path` on a
+ * Creates a function that returns the property value at `path` on a
  * given object.
  *
  * @static
@@ -4176,131 +4150,131 @@ function uniqueId(prefix) {
 module.exports = uniqueId;
 
 },{"../internal/baseToString":51}],"react-leaflet":[function(require,module,exports){
-"use strict";
+'use strict';
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _leaflet = require("leaflet");
+var _leaflet = require('leaflet');
 
 var _leaflet2 = _interopRequireDefault(_leaflet);
 
-var _types = require("./types");
+var _types = require('./types');
 
 var _types2 = _interopRequireDefault(_types);
 
-var _BaseTileLayer = require("./BaseTileLayer");
+var _BaseTileLayer = require('./BaseTileLayer');
 
 var _BaseTileLayer2 = _interopRequireDefault(_BaseTileLayer);
 
-var _CanvasTileLayer = require("./CanvasTileLayer");
+var _CanvasTileLayer = require('./CanvasTileLayer');
 
 var _CanvasTileLayer2 = _interopRequireDefault(_CanvasTileLayer);
 
-var _Circle = require("./Circle");
+var _Circle = require('./Circle');
 
 var _Circle2 = _interopRequireDefault(_Circle);
 
-var _CircleMarker = require("./CircleMarker");
+var _CircleMarker = require('./CircleMarker');
 
 var _CircleMarker2 = _interopRequireDefault(_CircleMarker);
 
-var _FeatureGroup = require("./FeatureGroup");
+var _FeatureGroup = require('./FeatureGroup');
 
 var _FeatureGroup2 = _interopRequireDefault(_FeatureGroup);
 
-var _GeoJson = require("./GeoJson");
+var _GeoJson = require('./GeoJson');
 
 var _GeoJson2 = _interopRequireDefault(_GeoJson);
 
-var _ImageOverlay = require("./ImageOverlay");
+var _ImageOverlay = require('./ImageOverlay');
 
 var _ImageOverlay2 = _interopRequireDefault(_ImageOverlay);
 
-var _Map = require("./Map");
+var _Map = require('./Map');
 
 var _Map2 = _interopRequireDefault(_Map);
 
-var _MapComponent = require("./MapComponent");
+var _MapComponent = require('./MapComponent');
 
 var _MapComponent2 = _interopRequireDefault(_MapComponent);
 
-var _MapLayer = require("./MapLayer");
+var _MapLayer = require('./MapLayer');
 
 var _MapLayer2 = _interopRequireDefault(_MapLayer);
 
-var _Marker = require("./Marker");
+var _Marker = require('./Marker');
 
 var _Marker2 = _interopRequireDefault(_Marker);
 
-var _MultiPolygon = require("./MultiPolygon");
+var _MultiPolygon = require('./MultiPolygon');
 
 var _MultiPolygon2 = _interopRequireDefault(_MultiPolygon);
 
-var _MultiPolyline = require("./MultiPolyline");
+var _MultiPolyline = require('./MultiPolyline');
 
 var _MultiPolyline2 = _interopRequireDefault(_MultiPolyline);
 
-var _Polygon = require("./Polygon");
+var _Polygon = require('./Polygon');
 
 var _Polygon2 = _interopRequireDefault(_Polygon);
 
-var _Polyline = require("./Polyline");
+var _Polyline = require('./Polyline');
 
 var _Polyline2 = _interopRequireDefault(_Polyline);
 
-var _Popup = require("./Popup");
+var _Popup = require('./Popup');
 
 var _Popup2 = _interopRequireDefault(_Popup);
 
-var _PopupContainer = require("./PopupContainer");
+var _PopupContainer = require('./PopupContainer');
 
 var _PopupContainer2 = _interopRequireDefault(_PopupContainer);
 
-var _Rectangle = require("./Rectangle");
+var _Rectangle = require('./Rectangle');
 
 var _Rectangle2 = _interopRequireDefault(_Rectangle);
 
-var _TileLayer = require("./TileLayer");
+var _TileLayer = require('./TileLayer');
 
 var _TileLayer2 = _interopRequireDefault(_TileLayer);
 
-var _WMSTileLayer = require("./WMSTileLayer");
+var _WMSTileLayer = require('./WMSTileLayer');
 
 var _WMSTileLayer2 = _interopRequireDefault(_WMSTileLayer);
 
 var setIconDefaultImagePath = function setIconDefaultImagePath(path) {
-  _leaflet2["default"].Icon.Default.imagePath = path;
+  _leaflet2['default'].Icon.Default.imagePath = path;
 };
 
-setIconDefaultImagePath("//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/images");
+setIconDefaultImagePath('//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/images');
 
-exports["default"] = {
+exports['default'] = {
   setIconDefaultImagePath: setIconDefaultImagePath,
-  PropTypes: _types2["default"],
-  BaseTileLayer: _BaseTileLayer2["default"],
-  CanvasTileLayer: _CanvasTileLayer2["default"],
-  Circle: _Circle2["default"],
-  CircleMarker: _CircleMarker2["default"],
-  FeatureGroup: _FeatureGroup2["default"],
-  GeoJson: _GeoJson2["default"],
-  ImageOverlay: _ImageOverlay2["default"],
-  Map: _Map2["default"],
-  MapComponent: _MapComponent2["default"],
-  MapLayer: _MapLayer2["default"],
-  Marker: _Marker2["default"],
-  MultiPolygon: _MultiPolygon2["default"],
-  MultiPolyline: _MultiPolyline2["default"],
-  Polygon: _Polygon2["default"],
-  Polyline: _Polyline2["default"],
-  Popup: _Popup2["default"],
-  PopupContainer: _PopupContainer2["default"],
-  Rectangle: _Rectangle2["default"],
-  TileLayer: _TileLayer2["default"],
-  WMSTileLayer: _WMSTileLayer2["default"]
+  PropTypes: _types2['default'],
+  BaseTileLayer: _BaseTileLayer2['default'],
+  CanvasTileLayer: _CanvasTileLayer2['default'],
+  Circle: _Circle2['default'],
+  CircleMarker: _CircleMarker2['default'],
+  FeatureGroup: _FeatureGroup2['default'],
+  GeoJson: _GeoJson2['default'],
+  ImageOverlay: _ImageOverlay2['default'],
+  Map: _Map2['default'],
+  MapComponent: _MapComponent2['default'],
+  MapLayer: _MapLayer2['default'],
+  Marker: _Marker2['default'],
+  MultiPolygon: _MultiPolygon2['default'],
+  MultiPolyline: _MultiPolyline2['default'],
+  Polygon: _Polygon2['default'],
+  Polyline: _Polyline2['default'],
+  Popup: _Popup2['default'],
+  PopupContainer: _PopupContainer2['default'],
+  Rectangle: _Rectangle2['default'],
+  TileLayer: _TileLayer2['default'],
+  WMSTileLayer: _WMSTileLayer2['default']
 };
-module.exports = exports["default"];
+module.exports = exports['default'];
 },{"./BaseTileLayer":1,"./CanvasTileLayer":2,"./Circle":3,"./CircleMarker":4,"./FeatureGroup":5,"./GeoJson":6,"./ImageOverlay":7,"./Map":8,"./MapComponent":9,"./MapLayer":10,"./Marker":11,"./MultiPolygon":12,"./MultiPolyline":13,"./Polygon":14,"./Polyline":15,"./Popup":16,"./PopupContainer":17,"./Rectangle":18,"./TileLayer":19,"./WMSTileLayer":20,"./types":22,"leaflet":"leaflet"}]},{},[]);

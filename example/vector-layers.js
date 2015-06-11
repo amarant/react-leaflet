@@ -9,7 +9,8 @@ import {
   Polyline,
   Popup,
   Rectangle,
-  TileLayer
+  TileLayer,
+  FeatureGroup
 } from 'react-leaflet';
 
 export default class VectorLayersExample extends Component {
