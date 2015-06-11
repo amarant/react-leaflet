@@ -1,9 +1,13 @@
-import React from "react";
-import Leaflet from "leaflet";
+import { PropTypes } from 'react';
+import { featureGroup } from 'leaflet';
 
-import PopupContainer from "./PopupContainer";
+import PopupContainer from './PopupContainer';
 
 export default class FeatureGroup extends PopupContainer {
+  static propTypes = {
+    layers: PropTypes.array.isRequired
+  };
+
   componentWillMount() {
     const {
       map,
@@ -20,7 +24,3 @@ export default class FeatureGroup extends PopupContainer {
     return <div style={{display: "none"}}>{children}</div>;
   }
 }
-
-FeatureGroup.propTypes = {
-  layers: React.PropTypes.array.isRequired
-};

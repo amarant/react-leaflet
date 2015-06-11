@@ -1,8 +1,18 @@
-import React from "react";
-import {Circle, CircleMarker, Map, MultiPolygon, MultiPolyline,
-  Polygon, Polyline, Popup, Rectangle, TileLayer, FeatureGroup} from "react-leaflet";
+import React, { Component } from 'react';
+import {
+  Circle,
+  CircleMarker,
+  Map,
+  MultiPolygon,
+  MultiPolyline,
+  Polygon,
+  Polyline,
+  Popup,
+  Rectangle,
+  TileLayer
+} from 'react-leaflet';
 
-export default class VectorLayersExample extends React.Component {
+export default class VectorLayersExample extends Component {
   render() {
     const center = [51.505, -0.09];
 
@@ -35,7 +45,7 @@ export default class VectorLayersExample extends React.Component {
 
     return <Map center={center} zoom={13}>
       <TileLayer
-        url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+        url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
       <FeatureGroup>
